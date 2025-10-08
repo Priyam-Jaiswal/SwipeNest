@@ -1,0 +1,75 @@
+-Create a repository
+-Initialize the repository
+-node_modules, package.json, package-lock.json
+-Install express
+-Create a server
+-Listen to port 3000
+-Write request handlers for /test, /hello
+-Install nodemon and update scripts inside package.json
+-What are dependencies
+-What is the use of "-g" while npm install 
+-Difference between caret and tilde (^ vs ~)
+
+-initialize git
+-.gitignore
+-Create a remote repo on github
+-Push all code to remote origin
+-Play with routes and route extensions ex. /hello, /, /hello/2
+-Order of routes matter a lot
+-Install postman and make a workspace/collection> test API call
+-Write logic to handle GET, POST, PATCH, DELETE API calls and test them on postman
+-Explore routing and use of ?, +, (),* in the routes
+-Use of regex in routes /a/ , /.*fly$/
+-Reading the query params in the routes
+-Reading the dynamic routes
+-Multiple Route Handlers- Play with the code
+-next()
+-next function and errors along with res.send()
+-app.use("/route", rH, [rH2, rH3], rH4, rH5);
+-what is a middleware
+-How express JS basically handles requests behind the scenes
+-Difference app.use and app.all
+-Write a dummy auth middleware for admin
+-Write a dummy auth middleware for all user routes except /user/login
+-Error Handling using app.use("/", (err,req,res,next)={})
+
+-Create a free cluster on MongoDB official website (Mongo Atlas)
+-Install mongoose library
+-Connect your application to the Database "connection-url"/swipenest
+-Call the cinnectDB functionand connect to datbase before starting application on 3000..
+-Create a userSchema & user Model
+-Create POST /signup API to add data to database
+-Push some documents using API calls from postman
+-Error Handling using try , catch
+
+-Difference between JSON and JS object
+-Add the express.json middleware to your app
+-Make your signup API dynamic to recieve data from the end user
+-User.findOne with duplicate email ids, which object will be returned
+-API- Get user by email
+-API - Feed API - Get /feed - get all the users from the database
+-API - get user by Id
+-Create a delete user API
+-Difference between PATCH and PUT
+-API - Update a user
+-Explore the Mongoose Documentation for Model methods
+-What are options in a Model.findOneAndUpdate method, explore more about it
+-API - Update the user with email ID
+
+-Explore schematype options from the documentation
+-add required, unique, lowercase, min, minlength, trim
+-Add default
+-Create a custom validation function for gender
+-Improve theDB schema - PUT all appropriate validations on each field in Schema
+-Add timestamps to the userSchema
+-Add API level validation on Patch request & Signup post API
+-Data sanitizing - Add API validation for each field
+-Install validator
+-Explore validator library function and use validator funcs for password, email, photoUrl
+-NEVER TRUST req.body
+
+-Validate data in Signup API
+-Install bcrypt package
+-Create passwordHash using bcrypt,hash & save the user is excrupted password
+-Create login API
+-Compare passwords and throw errors if email or password is invalid
